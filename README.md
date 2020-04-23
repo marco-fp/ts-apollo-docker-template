@@ -1,2 +1,1 @@
-# ts-apollo-server-template
-Basic setup of Apollo Server with Typescript
+Basic setup of Apollo Server with Typescript + Docker
