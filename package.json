@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node dist/server.js",
     "build": "tsc -p .",
-    "start:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
+    "start:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
+    "docker:build": "docker build . -t ts-apollo-docker-template",
+    "docker:start": "docker run -p 4000:4000 ts-apollo-docker-template:latest"
   },
   "repository": {
     "type": "git",
